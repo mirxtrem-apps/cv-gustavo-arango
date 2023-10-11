@@ -1,0 +1,208 @@
+/* ESTRUCTURA PRINCIPAL */
+.layout {
+    position: relative;
+    min-width: 1140px;
+    width: 75%;
+    height: 80vh;
+    min-height: 90vh;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 30% 70%;
+    /* shadow */
+    border-radius: 4rem;
+    box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* BARRA LATERAL */
+.layout__aside {
+    grid-area: aside;
+    border-radius: 4rem 0 0 4rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.aside__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    min-width: 30rem;
+
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+}
+
+.user-info__container-img {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-top: 7rem;
+    z-index: 1;
+}
+
+.user-info__img {
+    width: 100%;
+    background-color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    border-radius: 20rem;
+}
+
+.user-info__container-img::after {
+    content: "Hola";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: radial-gradient(#ffffff,
+            #ffffff 1px,
+            transparent 0%,
+            transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    border-radius: 30rem;
+    opacity: 0.4;
+}
+
+.user-info__name {
+    margin-top: 2rem;
+    color: var(--color-principal);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.user-info__job {
+    color: var(--color-principal);
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.user-info__links {
+    margin-bottom: 0.5rem;
+}
+
+.links__social {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.social__option {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    opacity: 0.8;
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.social__option:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-info__buttons {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.user-info__btn {
+    border: 2px solid var(--color-principal);
+    padding: 1.3rem 3rem;
+    border-radius: 3.2rem;
+    color: var(--color-principal);
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+}
+
+.user-info__btn:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secondary);
+}
+
+.user-info__footer {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.layout__content {
+    grid-area: content;
+    height: 100%;
+    min-height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: 0 10rem 10rem 0;
+}
+
+.content__page {
+    min-height: 100%;
+    border-radius: 4rem;
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__name {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.page__job {
+    font-size: 2.1rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
+}
+
+/* MENU NAVEGACIÓN LATERAL */
+.layout__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -105px;
+    min-width: 11rem;
+    background-color: var(--color-transparent);
+}
+
+.menu__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    min-height: 32rem;
+    padding: 2rem 0;
+    margin-left: 2.5rem;
+    background-color: var(--color-principal);
+    box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 6rem;
+}
+
+.menu__option {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__option:hover .menu__icon {
+    color: var(--color-secondary);
+}
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size: 2.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__overlay {
+    opacity: 0;
+    display: none;
+}
