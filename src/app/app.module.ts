@@ -13,8 +13,8 @@ import { NavComponent } from './modules/shared/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     MainModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
