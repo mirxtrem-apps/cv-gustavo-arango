@@ -1,13 +1,3 @@
-.content__page {
-    min-height: 100%;
-    border-radius: 4rem;
-    background-color: var(--color-principal);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .page__name {
     font-size: 6rem;
     margin-bottom: 1rem;
