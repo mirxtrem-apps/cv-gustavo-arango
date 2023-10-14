@@ -10,5 +10,13 @@
   --color-text: #555;
   --color-scrollbar: #D3D3D3;
   --color-background-scrollbar: #EEE;
+  --color-flutter-icon: #075b9a;
+  --color-python-icon: #1E415E;
+  --color-angular-icon: #dd0031;
+  --color-nodejs-icon: #026e00;
+  --color-git-icon: orange;
+  --color-figma-icon: purple;
+  --color-border-reviews: #E5E6E7;
+  --color-company: #A5A6A7;
 }
 

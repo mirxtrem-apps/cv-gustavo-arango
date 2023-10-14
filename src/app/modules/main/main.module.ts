@@ -7,6 +7,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainRoutingModule } from './main-routing.module';
+import { AboutServicesComponent } from './about-me/components/about-services/about-services.component';
+import { AboutReviewsComponent } from './about-me/components/about-reviews/about-reviews.component';
 
 
 
@@ -17,7 +19,9 @@ import { MainRoutingModule } from './main-routing.module';
     EducationComponent,
     PortfolioComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    AboutServicesComponent,
+    AboutReviewsComponent
   ],
   imports: [
     MainRoutingModule,

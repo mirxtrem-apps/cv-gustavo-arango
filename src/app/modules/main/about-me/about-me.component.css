@@ -53,6 +53,7 @@
     height: 30px;
     background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
     background-size: 6px 6px;
+    opacity: 0.3;
 }
 
 .title__color {
@@ -68,7 +69,6 @@
 }
 .personal-info__bio {
     flex-basis: 56%;
-
 }
 .personal-info__data {
     flex-basis: 44%;
@@ -77,6 +77,7 @@
 .personal-info__description {
     font-size: 1.5rem;
     line-height: 2.4rem;
+    text-align: justify;
 }
 .personal-info__option {
     margin-bottom: 1rem;

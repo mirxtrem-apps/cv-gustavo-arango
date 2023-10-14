@@ -1,0 +1,87 @@
+@import '../../about-me.component.css';
+
+.about__services {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header {
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.services__title {
+    font-size: 2.1rem;
+}
+
+.services__title::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.3;
+}
+
+.service__icon {
+    font-size: 3.8rem;
+}
+
+
+.service__icon-flutter {
+    color: var(--color-flutter-icon);
+}
+
+.service__icon-python {
+    color: var(--color-python-icon);
+}
+
+.service__icon-angular {
+    color: var(--color-angular-icon);
+}
+
+.service__icon-nodejs {
+    color: var(--color-nodejs-icon);
+}
+
+.service__icon-git {
+    color: var(--color-git-icon);
+}
+
+.service__icon-figma {
+    color: var(--color-figma-icon);
+}
+
+.service_subtitle {
+    color: var(--color-subtitle);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.services__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services__service {
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.service__title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.service__description {
+    font-size: 1.5rem;
+    text-align: justify;
+}
