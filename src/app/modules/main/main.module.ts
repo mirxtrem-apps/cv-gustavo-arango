@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MainRoutingModule } from './main-routing.module';
 import { AboutServicesComponent } from './about-me/components/about-services/about-services.component';
 import { AboutReviewsComponent } from './about-me/components/about-reviews/about-reviews.component';
+import { AboutClientsComponent } from './about-me/components/about-clients/about-clients.component';
 
 
 
@@ -21,7 +22,8 @@ import { AboutReviewsComponent } from './about-me/components/about-reviews/about
     BlogComponent,
     ContactComponent,
     AboutServicesComponent,
-    AboutReviewsComponent
+    AboutReviewsComponent,
+    AboutClientsComponent
   ],
   imports: [
     MainRoutingModule,
